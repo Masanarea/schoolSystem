@@ -27,6 +27,6 @@ class Login extends CI_Controller
     {
         $this->login_model->adminLoginFunction();
         $this->session->set_flashdata("flash_message", "Succsessfully logged in");
-            redirect(base_url()."admin/dashboard", "refresh");
+        redirect(base_url() . "admin/dashboard", "refresh");
     }
 }
